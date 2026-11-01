@@ -1,0 +1,12 @@
+# Packages the app needs. run.bat installs these automatically on first run.
+streamlit>=1.40,<2
+numpy>=1.26
+pandas>=2.0
+# scipy.odr is deprecated from 1.17 and scheduled for removal in 1.19, so the
+# upper pin keeps the fitting method from disappearing in a routine upgrade.
+scipy>=1.11,<1.19
+matplotlib>=3.8
+plotly>=5.20
+openpyxl>=3.1
+xlrd>=2.0
+odfpy>=1.4

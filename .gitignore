@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------------
+# Things that must not be shared
+# ---------------------------------------------------------------------
+
+# Remembers the last file, folder and columns you had open -- which means it
+# contains the full paths on your own computer (your user name, your OneDrive).
+# Harmless locally, but not something to publish.
+.labfit_session.json
+
+# Your measurements. Keep the note explaining what the folder is for.
+data/*
+!data/README.md
+
+# ---------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------
+# Figures exported from the app into this folder. The ones in examples/
+# are kept on purpose.
+# ---------------------------------------------------------------------
+/*.png
+/*.pdf
+/*.svg
+
+# ---------------------------------------------------------------------
+# Junk from Windows, Excel, OneDrive and editors
+# ---------------------------------------------------------------------
+~$*
+.~lock.*
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
